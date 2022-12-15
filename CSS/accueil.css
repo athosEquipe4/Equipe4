@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
     background: #f2eee3;
 }
-
+/* =========================Tête et navigation du page========================== */
 header{
     background-color: darkgrey;
     margin: 0;
@@ -33,7 +33,7 @@ header nav a:hover {
         0 0 50px #03e9f4,
         0 0 100px #03e9f4;
 }
-
+/* =========================Corps du page========================== */
 .box{
     display: flex;
     flex-direction: column;
@@ -42,6 +42,7 @@ header nav a:hover {
 .main{
     display:flex;
     float: left;
+    margin-top:15px;
 }
 
 .box .bloc{
@@ -49,17 +50,18 @@ header nav a:hover {
     margin: 10px;
     padding: 10px;
     width: 80%;
-    margin-left: 5%;
-    margin-right: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .main .commentaire{
-    border: 1px solid black;
+    border: 2px ridge black;
+    background-color: #4d4747a4;
     margin: 10px;
-    padding: 10px;
-    width: 80%;
+    width: 100%;
     max-height: 100%; 
-    margin-left: 20%;
+    margin-left: auto;
     margin-right: 5%;
 }
 
@@ -73,9 +75,18 @@ h2{
 .bloc a{
     text-decoration: none;
     list-style-type: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5px;
     border: 2px solid black;
     text-align: center;
+}
+
+.bloc a:hover{
+    background: #290082;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #290082,
+        0 0 25px #290082,
+        0 0 50px #290082,
+        0 0 100px #290082;
 }
