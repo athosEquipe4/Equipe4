@@ -1,3 +1,54 @@
+body{
+    background-color: rgba(0, 4, 255, 0.538);
+}
+
+header{
+    text-align: center;
+    font-family: serif;
+    border-bottom: 2px double black;
+}
+
+/* ======================================Formulaire===================================== */
+.main .stagiaire h2, .entreprise h2{
+    text-align: center;
+    border-bottom: 2px dotted black;
+    font-size: 25px;
+}
+
+
+.main .stagiaire{
+    margin: 5px;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .entreprise{
+    margin: 5px;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .stagiaire input, .entreprise input{
+    width: 50%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    float: right;
+    background: transparent;
+}
+
+
+/* ======================================Partie dépot de ficher et boutton===================================== */
 .main .depot{
     margin: 10px;
     padding: 100px;
@@ -6,38 +57,27 @@
     flex-direction: column-reverse;
     align-items: center;
     width: 60%;
+    background-color: aquamarine;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .main .control_depot{
     display: flex;
     align-items:stretch;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
     
 }
 
 /* ======================================Bouton d'envoie et annulation===================================== */
-.main .home{
-    margin: 10px;
-    padding: 3px;
-    color: black;
-    font-size: 20px;
-    border-radius: 3px;
-    border: 1px solid black;
-    background-color: brown;
-    text-decoration: none;
-    list-style-type: none;
-}
-.main .home:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-}
-
 .main .send{
     background-color: blue;
+    color: black;
     margin: 10px;
+    padding: 3px;
     font-size: 20px;
     border-radius: 3px;
 }

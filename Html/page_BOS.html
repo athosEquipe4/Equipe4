@@ -9,51 +9,75 @@
     </head>
     <body>
         <header>
-            <h1></h1>
+            <h1>Dépot De bordereaux Du Stage</h1>
         </header>
         <div class="main">
             <form action="#">
-                <h2>stagiaire</h2>
-                <label>Nom : </label>
-                <input type="text" name="" id="nom"/>
-                <label>Prénom : </label>
-                <input type="text" name="" id="prenom">
-                <label>Adresse : </label>
-                <input type="text" name="" id="adr">
-                <label>Ville : </label>
-                <input type="text" name="" id="ville">
-                <label>Code Postal : </label>
-                <input type="number" name="" id="codePostal">
-                <label>Mail : </label>
-                <input type="email" name="" id="mail">
-                <hr>
-                <h2>L'Entreprise</h2>
-                <label>Raison Sociale : </label>
-                <input type="text" name="" id="reso"/>
-                <label>Nb Salarié : </label>
-                <input type="number" name="" id="nb">
-                <label>Siret : </label>
-                <input type="text" name="" id="siret">
-                <label>Type d'Entreprise : </label>
-                <input type="text" name="" id="type">
-                <label>Adresse : </label>
-                <input type="text" name="" id="adrEnt">
-                <label>Ville : </label>
-                <input type="text" name="" id="villeEnt">
-                <label>Code Postal : </label>
-                <input type="number" name="" id="codePostalEnt">
-                <label> Domaine d'activités de l'Entreprise</label>
-                <input type="text" name="" id="domaine">
-                <hr>
+                <div class="stagiaire">
+                    <h2>Stagiaire</h2>
+
+                    <label>Nom : </label>
+                    <input type="text" name="" id="nom"/>
+
+                    <label>Prénom : </label>
+                    <input type="text" name="" id="prenom">
+
+                    <label>Adresse : </label>
+                    <input type="text" name="" id="adr">
+
+                    <label>Ville : </label>
+                    <input type="text" name="" id="ville">
+
+                    <label>Code Postal : </label>
+                    <input type="number" name="" id="codePostal">
+
+                    <label>Mail : </label>
+                    <input type="email" name="" id="mail">
+                    <hr>
+                </div>
+                <div class="entreprise">
+                    <h2>L'Entreprise</h2>
+
+                    <label>Raison Sociale : </label>
+                    <input type="text" name="" id="reso"/>
+
+                    <label>Nb Salarié : </label>
+                    <input type="number" name="" id="nb">
+
+                    <label>Siret : </label>
+                    <input type="text" name="" id="siret">
+
+                    <label>Type d'Entreprise : </label>
+                    <input type="text" name="" id="type">
+
+                    <label>Adresse : </label>
+                    <input type="text" name="" id="adrEnt">
+
+                    <label>Ville : </label>
+                    <input type="text" name="" id="villeEnt">
+
+                    <label>Code Postal : </label>
+                    <input type="number" name="" id="codePostalEnt">
+
+                    <label> Domaine d'activités de l'Entreprise</label>
+                    <input type="text" name="" id="domaine">
+                    <hr>
+                </div>
                 <div class="control_depot">
                     <div class="depot">
                         <label> Cliquer pour déposer un ficher :]</label>
                         <input id="ficher" type="file" required />
                     </div>
                     <button type="submit" class="send">VALIDER</button>
-                    <a href="page_accueil.html" class="home">ANNULER</a>
+                    <button type="button" class="send" id="myButton"
+                        onclick="location.href='page_accueil.html'">ANNULER</button>
                 </div>
             </form>
         </div>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "page_accueil.html";
+            };
+        </script>
     </body>
 </html>

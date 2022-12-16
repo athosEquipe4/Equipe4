@@ -53,6 +53,7 @@ header nav a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: #81DAF5;
 }
 
 .main .commentaire{
@@ -66,7 +67,7 @@ header nav a:hover {
 }
 
 h2{
-    background-color: #03c8f462;
+    background-color: #00BFFF;
     margin: 0px;
     padding: 2px;
     text-align: center;
